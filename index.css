@@ -1,0 +1,205 @@
+* {
+    box-sizing: border-box;
+    margin :0;
+    padding:0;
+}
+
+.parent_container{
+    height: 100vh;
+    /* width:100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(227, 32, 76, 1.0);
+    background: -webkit-radial-gradient(top left, rgba(227, 32, 76, 1.0), rgba(29, 142, 235, 1.0));
+    background: -moz-radial-gradient(top left, rgba(227, 32, 76, 1.0), rgba(29, 142, 235, 1.0));
+    background: radial-gradient(to bottom right, rgba(227, 32, 76, 1.0), rgba(29, 142, 235, 1.0));;
+
+
+}
+.game_container {
+    height:80%;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    box-shadow:  10px 10px 10px 0px rgb(0 0 0 / 40%);
+    background: rgba(255 248 220 / 0.6);
+   
+}
+.hangman_conatainer{
+    height: 100%;
+    width:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.playground_container{
+    height: 100%;
+    width:50%;
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dash_letter{
+    font-size: 50px;
+}
+.dashes{
+margin:9px;
+font-size: 22px;
+    /* width: 0; */
+}
+.underscore::after {
+    content: "_";
+    font-size: 22px;
+
+    margin-left: -15px;
+}
+.display_none{
+    display: none;
+}
+.hangman_absolute{
+    height:300px;
+    width:300px;
+    position: absolute;
+}
+.leg2{
+    position: absolute;
+    height: 9%;
+    width: 3px;
+    background: black;
+    transform: rotate(225deg);
+    left: 36%;
+    top: 72%;
+
+}
+.leg1 {
+    position: absolute;
+    height: 9%;
+    width: 3px;
+    background: black;
+    transform: rotate(135deg);
+    left: 42%;
+    top: 72%;
+}
+.hand2{
+    position: absolute;
+    height: 9%;
+    width: 3px;
+    background: black;
+    transform: rotate(315deg);
+    left: 36%;
+    top: 58%;
+}
+.hand1{
+    position: absolute;
+    height: 9%;
+    width: 3px;
+    background: black;
+    transform: rotate(45deg);
+    left: 41.9%;
+    top: 58%;
+}
+.body_stick{
+    position: absolute;
+    background: black;
+    height: 14.8%;
+    width: 3px;
+    left: 39%;
+    top: 59%;
+}
+.circle{
+    position: absolute;
+    background: black;
+    height: 10%;
+    width: 10%;
+    border-radius: 50%;
+    top: 49%;
+    left: 34.1%;
+}
+.rope{
+    
+    position: absolute;
+    background: black;
+    height: 6%;
+    width: 3px;
+    top: 43%;
+    left: 39%;
+
+}
+.horizontal{
+    background: black;
+    height: 3px;
+    width: 16%;
+    position: absolute;
+    left: 23%;
+    top: 43%;
+}
+.vertical{
+    position: absolute;
+    height: 45%;
+    width: 3px;
+    background: black;
+    top: 43%;
+    left: 23%;
+}
+
+.input_overflow{
+    max-width: 85%;
+    overflow-wrap: none;
+    overflow: auto;
+    white-space: nowrap;
+    /* text-overflow: ellipsis; */
+}
+.buttons_div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:20px;
+}
+button {
+    height: 30px;
+        border: none;
+        background: rgba(227, 32, 76, 1.0);
+        color: white;
+        font-weight: bold;
+        padding: 5px;
+    
+        margin: 10px;
+    
+    
+        box-shadow: 5px 5px 5px 0 rgb(0 0 0 / 40%);
+        border-radius: 4px;
+
+    
+}
+@media only screen and (max-width:448px) {
+    .hangman_absolute{
+        height:200px;
+        width:200px;
+        position: absolute;
+    }
+    .game_container {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .hangman_conatainer{
+        height: 50%;
+        width:100%;
+    }
+    
+    .playground_container{
+        height: 50%;
+        width:100%;
+ 
+    }
+}
